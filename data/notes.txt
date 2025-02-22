@@ -1,0 +1,9 @@
+### Run Json-Server and json-server-auth And make a server.js file also in root project folder ############
+---> Install npm from root folder
+---> To install and run the server follow the steps of JSON-SERVER-AUTH
+---> RUN --> json-server data/db.json -m ./node_modules/json-server-auth --port 8000
+
+
+
+
+***********************************************************************************
