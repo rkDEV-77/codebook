@@ -183,7 +183,7 @@ export const Checkout = ({ setCheckout }) => {
                     value="03"
                     disabled
                     required=""
-                  /> // eslint-disable-line
+                  /> 
                   <input
                     type="number"
                     name="year"
@@ -192,7 +192,7 @@ export const Checkout = ({ setCheckout }) => {
                     value="27"
                     disabled
                     required=""
-                  />  //eslint-disable-line
+                  />  
                 </div>
                 <div>
                   <label
