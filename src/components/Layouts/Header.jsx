@@ -5,6 +5,9 @@ import { Search } from "../Sections/Search";
 import { DropdownLoggedIn, DropdownLoggedOut } from "../index";
 import { useCart } from "../../context";
 
+// console.log(process.env.VITE_REACT_APP_API_URL);
+
+
 export const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [dropDown, setDropDown] = useState(false);

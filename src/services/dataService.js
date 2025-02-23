@@ -17,7 +17,7 @@ export async function getUser(){
         },
     }
 
-    const response = await fetch(`http://localhost:8000/600/users/${browserData.cbid}`, requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_APP_HOST}/600/users/${browserData.cbid}`, requestOptions);
     if(!response.ok){
       throw {message: response.statusText, status: response.statusText}
   }
@@ -34,7 +34,7 @@ export async function getUserOrders(){
       headers: {"Content-Type": "application/json", Authorization: `Bearer ${browserData.token}` }
     }
 
-    const response = await fetch(`http://localhost:8000/660/orders?user.id=${browserData.cbid}`, requestOptions)
+    const response = await fetch(`${import.meta.env.VITE_APP_HOST}/660/orders?user.id=${browserData.cbid}`, requestOptions)
     if(!response.ok){
       throw {message: response.statusText, status: response.statusText}
   }
@@ -66,7 +66,7 @@ export async function createOrder(cartList, total, user){
     }
     
     
-    const response = await fetch("http://localhost:8000/660/orders", requestOptions);
+    const response = await fetch(`${import.meta.env.VITE_APP_HOST}/660/orders`, requestOptions);
     if(!response.ok){
       throw {message: response.statusText, status: response.statusText}
   }
